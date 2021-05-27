@@ -11179,6 +11179,19 @@ section .img-text:hover{
   color:  #000;
 }
 
+/* ----------------------------
+        Link Under Img   
+-----------------------------*/
+
+#link-to-link a{
+  color: #404040;
+  font-size: 23px;
+  text-decoration: none;
+}
+
+#icon-param {
+  height: 30px;
+}
  
 /* Sur les écrans, quand la largeur de la fenêtre fait au maximum 1280px */
 @media screen and (max-width: 500px){

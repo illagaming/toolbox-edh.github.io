@@ -11091,6 +11091,10 @@ html {
   opacity: 0.7;
 }
 
+.img-hover {  
+  opacity: 0.8;
+}
+
 #block {
   background-color: #3B3B3B;
   height: 100px;
@@ -11108,6 +11112,7 @@ section .img-text:hover{
   opacity: 0.8;
   background-color: #F7F7F7;
 }
+
 
 .text-banner {
   display: -moz-flex;
@@ -11176,8 +11181,9 @@ section .img-text:hover{
   text-decoration: none;
   z-index: 3; 
   font-size: 30px; 
-  color:  #000;
+  color:  #272727;
 }
+
 
 /* ----------------------------
         Link Under Img   
@@ -11187,6 +11193,11 @@ section .img-text:hover{
   color: #404040;
   font-size: 23px;
   text-decoration: none;
+ }
+
+#link-to-link {  
+  margin-left: 24%;
+  margin-top: 60px;
 }
 
 #icon-param {
@@ -11201,6 +11212,10 @@ section .img-text:hover{
   .text-banner {
     height: 230px;
     font-size: 20px;
+  }  
+  #link-to-link {  
+    margin-left: 50px;
+    margin-top: 0;
   }
 }
 
@@ -11210,4 +11225,12 @@ section .img-text:hover{
     height: 280px;
     font-size: 30px;
   }
+}
+
+#link-to-edh:hover{
+  opacity: 0.5;
+}
+
+#logo-footer {
+  width: 150px;
 }

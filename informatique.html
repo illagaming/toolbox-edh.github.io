@@ -30,7 +30,7 @@
                         <li class="separate">|</li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="link-menu py-3 px-0 px-lg-3 rounded" href="informatique.html">Informatique</a></li>
                         <li class="separate">|</li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="link-menu py-3 px-0 px-lg-3 rounded" href="#">Ressources Humaines</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="link-menu py-3 px-0 px-lg-3 rounded" href="drh.html">Ressources Humaines</a></li>
                         <li class="separate">|</li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="link-menu py-3 px-0 px-lg-3 rounded" href="#">Autre</a></li>
                     </ul>
@@ -53,7 +53,7 @@
                     <!-- IT -->
                     <div class="col-md-6 col-lg-4 mb-5">
                         <div class="portfolio-item mx-auto" data-bs-toggle="modal">                            
-                            <a onclick="recupId(test);" href="#tools" id="tool">
+                            <a onclick="recupId('tools');" href="#tools">
                                 <img class="img-fluid img-hover" src="images/tools.png" alt="..." />
                                 <div class="img-text"><b>Les Outils</b></div>
                             </a>                            
@@ -62,7 +62,7 @@
                     <!-- DRH -->
                     <div class="col-md-6 col-lg-4 mb-5">
                         <div class="portfolio-item mx-auto" data-bs-toggle="modal">
-                            <a onclick="IT();" href="#tools">
+                            <a onclick="recupId('tuto');" href="#tuto">
                                 <img class="img-fluid img-hover" src="images/tutorial.png" alt="..." />
                                 <div class="img-text"><b>Les Tutos</b></div>
                             </a>
@@ -71,62 +71,130 @@
                     <!-- EDH-groupe-->
                     <div class="col-md-12 col-lg-4 mb-5">     
                         <div class="portfolio-item mx-auto" data-bs-toggle="modal">
-                            <img class="img-fluid img-hover" src="images/good-to-do.png" alt="..." />
-                            <div class="img-text"><b>Les Bonnes Pratiques IT</b></div>
+                            <a onclick="recupId('good-to-do');" href="#good-to-do">
+                                <img class="img-fluid img-hover" src="images/good-to-do.png" alt="..." />
+                                <div class="img-text"><b>Les Bonnes Pratiques IT</b></div>
+                            </a>
                         </div>                   
                     </div>                    
                 </div>
-                <hr>  
-                <div id="more">
-                    <div id="tools">
-                        <!--Grid Items-->
-                        <div class="row justify-content-center">
-                            <!-- Word -->
-                            <div class="col-md-6 col-lg-4 mb-5">
-                                <div class="portfolio-item mx-auto" data-bs-toggle="modal">
-                                    <a onclick="" href="#tools">
-                                        <img class="img-fluid img-hover" src="images/word-logo.png" alt="..." />
-                                        <div class="img-text"><b>Word</b></div>
-                                    </a>                            
-                                </div>
+                <hr>                  
+                <div id="tools" style="display:none;">
+                    <!--Grid Items-->
+                    <div class="row justify-content-center">
+                        <!-- Word -->
+                        <div class="col-md-6 col-lg-4 mb-5">
+                            <div class="portfolio-item mx-auto" data-bs-toggle="modal">
+                                <a>
+                                    <img class="img-fluid img-hover" src="images/word-logo.png" alt="..." />
+                                    <div class="img-text"><b>Word</b></div>
+                                </a>                            
                             </div>
-                            <!-- Excel -->
-                            <div class="col-md-6 col-lg-4 mb-5">
-                                <div class="portfolio-item mx-auto" data-bs-toggle="modal">
-                                    <a onclick="" href="#tools">
-                                        <img class="img-fluid img-hover" src="images/excel-logo.png" alt="..." />
-                                        <div class="img-text"><b>Excel</b></div>
-                                    </a>
-                                </div>
+                        </div>
+                        <!-- Excel -->
+                        <div class="col-md-6 col-lg-4 mb-5">
+                            <div class="portfolio-item mx-auto" data-bs-toggle="modal">
+                                <a>
+                                    <img class="img-fluid img-hover" src="images/excel-logo.png" alt="..." />
+                                    <div class="img-text"><b>Excel</b></div>
+                                </a>
                             </div>
-                            <!-- Teams -->
-                            <div class="col-md-12 col-lg-4 mb-5">     
-                                <div class="portfolio-item mx-auto" data-bs-toggle="modal">
-                                    <img class="img-fluid img-hover" src="images/teams.png" alt="..." />
-                                    <div class="img-text"><b>Teams</b></div>
-                                </div>                   
-                            </div>  
-                        </div>    
+                        </div>
+                        <!-- Teams -->
+                        <div class="col-md-6 col-lg-4 mb-5">     
+                            <div class="portfolio-item mx-auto" data-bs-toggle="modal">
+                                <img class="img-fluid img-hover" src="images/teams.png" alt="..." />
+                                <div class="img-text"><b>Teams</b></div>
+                            </div>                   
+                        </div> 
+                        <!-- Fuze -->
+                        <div class="col-md-6 col-lg-4 mb-5">
+                            <div class="portfolio-item mx-auto" data-bs-toggle="modal">
+                                <a>
+                                    <img class="img-fluid img-hover" src="images/fuze.png" alt="..." />
+                                    <div class="img-text"><b>Fuze</b></div>
+                                </a>                            
+                            </div>
+                        </div>
+                        <!-- Box -->
+                        <div class="col-md-6 col-lg-4 mb-5">
+                            <div class="portfolio-item mx-auto" data-bs-toggle="modal">
+                                <a>
+                                    <img class="img-fluid img-hover" src="images/box-logo.png" alt="..." />
+                                    <div class="img-text"></div>
+                                </a>                            
+                            </div>
+                        </div> 
                     </div> 
-                    <div id="tuto">
-                        
-                    </div>                   
-                </div>
-                <hr>
-                <div>
-                    
-                </div>                         
+                    <hr>   
+                </div> 
+                <div id="tuto" style="display:none">
+                    <div class="container text-center">
+                        <h3 style="padding:30px;">Comment changer son mot de passe office</h3>
+                        <iframe width="800" height="400" src="https://www.youtube.com/embed/u-uynhy4gEA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
+                        <hr>
+                        <h3>Comment créer ma signature email</h3>
+                    </div>                    
+                </div>  
+                <div id="good-to-do" style="display:none">
+                    <div class="container">
+                        <h2 style="padding-top: 30px;">Voici les dix commandements de Services-IT pour faire de chacun d’entre vous un utilisateur exemplaire !</h2></br>
+
+                        <h4>1) Changer son mot de passe :</h4></br>
+
+                        <p class="text-justify">Nous vous conseillons de les changer régulièrement et de choisir des mots de passes complexes avec au moins : des minuscules et majuscules, chiffres et caractères spéciaux. Pour les accès sensibles, comme par exemple la banque en ligne, il vaut mieux privilégier des systèmes d’authentification forte.</p></br>
+
+                        <h4>2) Télécharger des fichiers que de source sûre :</h4></br>
+
+                        <p class="text-justify">Pour éviter les virus ou les logiciels piratés, nous vous conseillons de télécharger depuis les sites webs des éditeurs. Eviter de télécharger des applications non approuvées par votre service informatique.</p></br>
+
+                        <h4>3) Mettre à jour ses logiciels :</h4></br>
+
+                        <p class="text-justify">Dans chaque système d’exploitation des vulnérabilités existent, une fois découvertes, elles sont corrigées par les éditeurs via des mises à jour. C’est pour cela que lorsqu’elle se lance sur votre poste, nous vous conseillons vivement de la faire et surtout de ne pas l’interrompre !</p></br>
+
+                        <h4>4) Faire attention aux mails que vous recevez :</h4></br>
+
+                        <p class="text-justify">Votre fournisseur habituel vous envoie un mail depuis une boîte étrange (ex : facturation.microsoft @hotmail.fr) avec un fichier zip à ouvrir ? Supprimez le mail !
+                        Ce type de fichiers peut contenir un virus ou un programme malveillant qui s’installera automatiquement sur votre poste et aura accès à l’ensemble de vos données.</p></br>
+
+                        <h4>5) Être vigilent lors de ses déplacements :</h4></br>
+
+                        <p class="text-justify">Lors des déplacements, nous vous conseillons de partir uniquement avec le matériel nécessaire à votre mission, de toujours le garder avec vous et surtout de vérifier que vos mots de passe ne sont pas préenregistrés.
+                        Mieux vaut sauvegarder vos données avant de partir, vous serez heureux de les retrouver en cas de perte d’une clé USB ou de votre ordinateur.</p></br>
+
+                        <h4>6) Enregistrer ses documents sur le réseau :</h4></br>
+
+                        <p class="text-justify">Nous conseillons d’enregistrer tous les documents professionnels sur le serveur pour une sécurité supplémentaire.
+                        Pour les utilisateurs : si votre poste casse, vos fichiers seront toujours accessibles,
+                        Pour les dirigeants : un collaborateur part de l’entreprise avec son poste mais pas avec des données sensibles !</p></br>
+
+                        <h4>7) Ne pas se connexter au wifi public :</h4></br>
+
+                        <p class="text-justify">C’est bien pratique mais non sécurisé. Il ne faut pas se connecter au Wi-Fi proposé dans les cafés, les aéroports ou les gares depuis un appareil professionnel.</p></br>
+
+                        <h4>8) Vérifier les paiements sur internet :</h4></br>
+
+                        <p class="text-justify">La présence du cadenas dans la barre d’adresse ou au bas du navigateur, ainsi que la mention « https//:» dans le début de l’adresse.
+                        Pour plus de sécurité, privilégiez la méthode de confirmation d’achat via sms.
+                        En cas de doute sur le bienfondé du vendeur, vérifiez son existence légale et les avis des consommateurs.</p></br>
+
+                        <h4>9) Prendre soin de ses données personnelles :</h4></br>
+
+                        <p class="text-justify">Sur internet, des personnes mal intentionnées pratiquent le phishing pour dérober vos données et s’en servir à votre insu. Nous vous conseillons de transmettre les données strictement nécessaires, de vérifier les cases à cocher et de lire les conditions générales.
+                        Sur vos smartphones, certaines applications sont susceptibles d’accéder à vos données et de les exploiter, il faut vérifier le paramétrage et désactiver les fonctionnalités.</p></br>
+
+                        <h4>10) Si vous avez un doute n'hésitez pas à contacter le service informatique</h4></br>
+                    </div>                    
+                </div>                     
             </div>
         </section>
-
-
         <!-- Footer-->
         <footer class="footer text-center">
             <div class="container">
                 <div class="row">
                     <!-- Footer Location-->
                     <div class="col-lg-4 mb-5 mb-lg-0">
-                        <h4 class="text-uppercase mb-4">Numéro utile</h4>
+                        <h5 class="text-uppercase mb-4">Numéro utile</h5>
                         <p class="lead mb-0">
                             01 45 05 78 95                            
                         </p>
@@ -138,8 +206,8 @@
                     </div>
                     <!-- Footer About Text-->
                     <div class="col-lg-4">
-                        <a href="https://www.groupe-edh.com/" style="text-decoration:none" id="link-to-edh">
-                        <h4 class="text-uppercase mb-4 link-footer">Lien vers le site EDH</h4>
+                        <a href="https://www.groupe-edh.com/" style="text-decoration:none" id="link-to-edh" target="_blank">
+                        <h5 class="text-uppercase mb-4 link-footer">Lien vers le site EDH</h5>
                         <img src="images/edh-logo.png" id="logo-footer">
                         </a>                        
                     </div>

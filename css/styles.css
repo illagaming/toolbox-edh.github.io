@@ -11007,6 +11007,7 @@ html {
   max-width: 25rem;
   border-radius: 0.5rem;
   overflow: hidden;
+  width: 75%;
 }
 .portfolio .portfolio-item .portfolio-item-caption {
   position: absolute;
@@ -11195,6 +11196,10 @@ section .img-text:hover{
   text-decoration: none;
  }
 
+ #link-to-link a:hover{
+  color: grey;
+ }
+
 #link-to-link {  
   margin-left: 24%;
   margin-top: 60px;
@@ -11204,7 +11209,7 @@ section .img-text:hover{
   height: 30px;
 }
  
-/* Sur les écrans, quand la largeur de la fenêtre fait au maximum 1280px */
+
 @media screen and (max-width: 500px){
   #paris-picture {
     margin-top: 15%;
@@ -11219,7 +11224,6 @@ section .img-text:hover{
   }
 }
 
-/* Sur les écrans, quand la largeur de la fenêtre fait au maximum 1280px */
 @media screen and (min-width: 500px) and (max-width: 900px){  
   .text-banner {
     height: 280px;
@@ -11232,5 +11236,27 @@ section .img-text:hover{
 }
 
 #logo-footer {
-  width: 150px;
+  width: 80px;
 }
+
+/* Sur les écrans, quand la largeur de la fenêtre fait au maximum 1280px */
+@media screen and (min-width: 1300px) and (max-width: 1600px){  
+  .text-banner {
+    height: 400px;
+    padding-top: 100px;
+    font-size: 40px;
+  }
+}
+
+/* Sur les écrans, quand la largeur de la fenêtre fait au maximum 1280px */
+@media screen and (min-width: 900px) and (max-width: 1300px){  
+  .text-banner {
+    height: 400px;
+    font-size: 40px;
+  }
+}
+
+footer {
+  padding: 30px !important;  
+}
+
